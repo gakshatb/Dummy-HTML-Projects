@@ -1,0 +1,467 @@
+/**
+
+DEFAULT STYLES
+
+
+SIDEBAR
+___ SIDEBAR HEADER
+___ SIDEBAR MAIN
+___ SIDEBAR SQUARE
+___ SIDEBAR FOOTER
+
+
+MAIN
+___ MAIN MENU
+___ MAIN BACKGROUND
+___ MAIN BOX
+___ MAIN SOCIAL
+
+
+**/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: rgb(10, 10, 10);
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ SIDEBAR ************/
+.sidebar {
+  width: 30%;
+  height: 100vh;
+}
+
+
+/************ HEADER ************/
+.sidebar__header {
+  position: fixed;
+  width: 30%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  padding: 0 3%;
+}
+
+.sidebar__header__search {
+  border: 0;
+  background: 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  max-width: 40%;
+}
+
+
+/************ SIDEBAR MAIN ************/
+.sidebar__main {
+  position: absolute;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebar__main__wrapper {
+  display: flex;
+  position: relative;
+  width: 200%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.sidebar__main__wrapper__left {
+  background: #b53931;
+  width: 100%;
+  height: 100%;
+}
+
+
+.sidebar__main__wrapper__right {
+  background: #efbd4a;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/************ SIDEBAR SQUARES ************/
+.sidebar__square {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+}
+
+.sidebar__square__wrapper {
+  display: flex;
+  position: relative;
+  width: 200%;
+  height: 100%;
+  transform: translate(-50%);
+}
+
+.sidebar__square__wrapper__left,
+.sidebar__square__wrapper__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.sidebar__square__wrapper__left {
+  background: #efbd4a;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__square__wrapper__right {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/************ SIDEBAR FOOTERS ************/
+.sidebar__footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sidebar__footer__wrapper {
+  display: flex;
+  position: relative;
+  width: 200%;
+  height: 100%;
+}
+
+.sidebar__footer__wrapper__left,
+.sidebar__footer__wrapper__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  padding: 2em;
+  cursor: pointer;
+  min-width: 50%;
+}
+
+.sidebar__footer__wrapper__left p,
+.sidebar__footer__wrapper__right p {
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 80%;
+}
+
+.sidebar__footer__wrapper__left h3,
+.sidebar__footer__wrapper__right h3 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+
+.sidebar__footer__wrapper__left {
+  background: #b53931;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__footer__wrapper__right {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ MAIN ************/
+.main {
+  position: relative;
+  width: 70%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+/************ MAIN MENU ************/
+.main__menu {
+  width: 100%;
+  height: 70px;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+.main__menu__nav {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main__menu__nav li {
+  margin-left: 8%;
+}
+
+.main__menu__nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+
+/************ MAIN BG WRAPPER ************/
+.main__bg__wrapper {
+  position: relative;
+  display: flex;
+  width: 200%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.main__bg__wrapper__img-1,
+.main__bg__wrapper__img-2 {
+  width: 100%;
+}
+
+.main__bg__wrapper__img-1 {
+  background: rgb(9, 9, 194);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg1.jpeg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url(./assets/bg1.jpeg) no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg1.jpeg) no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg1.jpeg) no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg1.jpeg) no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg1.jpeg) no-repeat;
+}
+
+.main__bg__wrapper__img-2 {
+  background: rgb(3, 3, 92);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg2.jpeg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url(./assets/bg2.jpeg) no-repeat;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg2.jpeg) no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg2.jpeg) no-repeat;
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg2.jpeg) no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(./assets/bg2.jpeg) no-repeat;
+}
+
+
+
+
+/************ MAIN BOX ************/
+.main__box {
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.main__box__wrapper {
+  display: flex;
+  position: relative;
+  width: 200%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.main__box__wrapper__left,
+.main__box__wrapper__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.main__box__wrapper__left p,
+.main__box__wrapper__right p {
+  font-size: 12px;
+}
+
+.main__box__wrapper__left span,
+.main__box__wrapper__right span {
+  font-size: 1.5em;
+  font-weight: 600;
+  transform: rotate(90deg);
+  transform-origin: bottom;
+}
+
+.main__box__wrapper__left {
+  background: #efbd4a;
+  width: 100%;
+  height: 100%;
+}
+
+.main__box__wrapper__right {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/************ MAIN SOCIAL ************/
+.main__social {
+  width: calc(100% - 220px);
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  left: 220px;
+  list-style: none;
+}
+
+.main__social li {
+  margin: 2em 0;
+}
+
+.main__social li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* HERO TEXT *******************/
+
+.hero {
+  position: absolute;
+  left: 2.3%;
+  bottom: calc(220px + 22vh);
+  z-index: 1;
+}
+
+.hero__text {
+  font-size: 13.8vw;
+  line-height: 0;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hero__text-2 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width: 1024px) {
+  
+  .sidebar__footer__wrapper__left,
+  .sidebar__footer__wrapper__right {
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar__footer__wrapper__left p,
+  .sidebar__footer__wrapper__right p {
+    width: 100%;
+  }
+}
