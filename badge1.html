@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Badge Styles</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background: #f0f0f0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    .badge-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .badge {
+      width: 120px;
+      height: 180px;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      color: white;
+    }
+
+    .badge-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 10px;
+      border-radius: 10px;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .diamond { background: linear-gradient(to bottom right, #a88beb, #e04fd5); }
+    .spark { background: linear-gradient(to bottom right, #8bc6ec, #9599e2); }
+    .star   { background: linear-gradient(to bottom right, #f9d423, #ff4e50); }
+    .square { background: linear-gradient(to bottom right, #b6c1ff, #6366f1); }
+    .triangle { background: linear-gradient(to bottom right, #e0a96d, #c96); }
+
+    .badge-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="badge-container">
+    <div class="badge" style="background: #9d50bb">
+      <div class="badge-icon diamond">◆</div>
+      <div class="badge-label">Diamond</div>
+    </div>
+
+    <div class="badge" style="background: #6a11cb">
+      <div class="badge-icon spark">✦</div>
+      <div class="badge-label">Spark</div>
+    </div>
+
+    <div class="badge" style="background: #f7971e">
+      <div class="badge-icon star">★</div>
+      <div class="badge-label">Star</div>
+    </div>
+
+    <div class="badge" style="background: #7f7fd5">
+      <div class="badge-icon square">⬢</div>
+      <div class="badge-label">Gem</div>
+    </div>
+
+    <div class="badge" style="background: #d1913c">
+      <div class="badge-icon triangle">▼</div>
+      <div class="badge-label">Bronze</div>
+    </div>
+  </div>
+</body>
+</html>
